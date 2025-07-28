@@ -55,7 +55,7 @@ const EyeScanner: React.FC = () => {
 
         {/* Iris */}
        
-        <div className="absolute inset-[25%] w-[50%] h-[50%] bg-gradient-radial from-gray-400 via-gray-900 to-black rounded-full shadow-[inset_0_0_30px_gray] z-20" />
+        <div className="absolute inset-[25%] w-[50%] h-[50%] bg-gradient-radial from-gray-400 via-gray-900 to-black rounded-full shadow-[inset_0_0_50px_gray] z-20" />
 
         {/* Glossy Reflection */}
         <div className="absolute top-[90px] left-[110px] w-8 h-8 rounded-full bg-white opacity-10 blur-md rotate-45 z-30" />

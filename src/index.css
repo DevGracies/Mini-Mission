@@ -65,3 +65,10 @@
     }
   }
 }
+
+body{
+   background: linear-gradient(135deg, #ff6ec4, #7873f5, #47e3ff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+}
