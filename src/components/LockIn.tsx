@@ -53,11 +53,11 @@ const LockIn: React.FC = () => {
   <div
   className="mt-10 max-w-md shadow-lg animate-fadeIn border rounded-2xl backdrop-blur-lg"
   style={{
-    padding: "1.5rem"
+    padding: "2rem"
   }}
 >
     <h3 className="text-purple-300 text-lg font-semibold mb-4">
-      Data Saved Successfully
+      {/* Data Saved Successfully */}
     </h3>
 
     <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
