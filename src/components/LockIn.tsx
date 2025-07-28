@@ -44,17 +44,17 @@ const LockIn: React.FC = () => {
        <div className="mt-10 max-w-md bg-gray-900/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg animate-fadeIn">
           <h3 className="text-purple-300 text-lg font-semibold mb-4">Data Saved Successfully</h3>
           <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
-            <div className="flex justify-between">
-              <span className="text-gray-400"> Name:</span>
-              <span>{data.name}</span>
+            <div className="flex gap-6">
+              <span className="text-gray-400"> "Name": </span>
+              <span>{` "${data.name}"`}</span>
             </div>
-            <div className="flex justify-between">
-              <span className="text-gray-400"> Date:</span>
-              <span>{data.date}</span>
+            <div className="flex gap-5">
+              <span className="text-gray-400"> "Date": </span>
+              <span>{`"${data.date}"`}</span>
             </div>
-            <div className="flex justify-between">
-              <span className="text-gray-400"> Time:</span>
-              <span>{data.time}</span>
+            <div className="flex gap-5">
+              <span className="text-gray-400"> "Time": </span>
+              <span>{`"${data.time}"`}</span>
             </div>
           </div>
         </div>
