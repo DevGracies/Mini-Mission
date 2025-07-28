@@ -41,7 +41,7 @@ const LockIn: React.FC = () => {
 </button>
 <br />
       {isLocked && data && (
-       <div className="mt-10 max-w-md bg-gray-900/70 backdrop-blur-lg border border-purple-600 rounded-2xl p-6 shadow-lg animate-fadeIn">
+       <div className="mt-10 max-w-md bg-gray-900/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg animate-fadeIn">
           <h3 className="text-purple-300 text-lg font-semibold mb-4">Data Saved Successfully</h3>
           <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
             <div className="flex justify-between">
