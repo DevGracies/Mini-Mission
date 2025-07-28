@@ -32,33 +32,51 @@ const LockIn: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4 py-10 ">
       {/*The Lock In Button */}
-<button
+<div
   onClick={handleLockIn}
-  className="px-20 py-12 bg-transparent text-black rounded-3xl shadow-2xl hover:scale-105 transition duration-300 font-extrabold tracking-[0.3em] uppercase"
-  style={{ fontSize: "1rem" }} 
+  style={{
+    backgroundColor: "blue",
+    color: "white",
+    padding: "1rem",
+    borderRadius: "1.5rem",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    fontSize: "1rem",
+  }}
 >
   LOCK IN
-</button>
+</div>
+
+
 <br />
-      {isLocked && data && (
-       <div className="mt-10 max-w-md bg-gray-900/70 backdrop-blur-lg rounded-2xl p-6 shadow-lg animate-fadeIn">
-          <h3 className="text-purple-300 text-lg font-semibold mb-4">Data Saved Successfully</h3>
-          <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
-            <div className="flex gap-6">
-              <span className="text-gray-400"> "Name": </span>
-              <span>{` "${data.name}"`}</span>
-            </div>
-            <div className="flex gap-5">
-              <span className="text-gray-400"> "Date": </span>
-              <span>{`"${data.date}"`}</span>
-            </div>
-            <div className="flex gap-5">
-              <span className="text-gray-400"> "Time": </span>
-              <span>{`"${data.time}"`}</span>
-            </div>
-          </div>
-        </div>
-      )}
+     {isLocked && data && (
+  <div
+  className="mt-10 max-w-md shadow-lg animate-fadeIn border rounded-2xl backdrop-blur-lg"
+  style={{
+    padding: "1.5rem"
+  }}
+>
+    <h3 className="text-purple-300 text-lg font-semibold mb-4">
+      Data Saved Successfully
+    </h3>
+
+    <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
+      <div className="flex justify-between p-4">
+        <span className="text-gray-400">"Name":</span>
+        <span>{`"${data.name}"`}</span>
+      </div>
+      <div className="flex justify-between p-4">
+        <span className="text-gray-400">"Date":</span>
+        <span>{`"${data.date}"`}</span>
+      </div>
+      <div className="flex justify-between p-4">
+        <span className="text-gray-400">"Time":</span>
+        <span>{`"${data.time}"`}</span>
+      </div>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };
