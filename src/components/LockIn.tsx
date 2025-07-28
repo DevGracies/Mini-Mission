@@ -30,29 +30,30 @@ const LockIn: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4 py-10 text-white">
+    <div className="flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4 py-10 ">
       {/*The Lock In Button */}
-      <button
-        onClick={handleLockIn}
-        className=" text-white text-10xl px-12 py-6 rounded duration-300 font-bold tracking-widest "
-      >
-        LOCK IN
-      </button>
+<button
+  onClick={handleLockIn}
+  className="px-20 py-12 bg-transparent text-black rounded-3xl shadow-2xl hover:scale-105 transition duration-300 font-extrabold tracking-[0.3em] uppercase"
+  style={{ fontSize: "1rem" }} 
+>
+  LOCK IN
+</button>
 <br />
       {isLocked && data && (
-        <div className="mt-10 w-20px max-w-md bg-gray-900/70 backdrop-blur-lg border border-purple-600 rounded-2xl p-6 shadow-lg animate-fadeIn">
+       <div className="mt-10 max-w-md bg-gray-900/70 backdrop-blur-lg border border-purple-600 rounded-2xl p-6 shadow-lg animate-fadeIn">
           <h3 className="text-purple-300 text-lg font-semibold mb-4">Data Saved Successfully</h3>
           <div className="space-y-2 text-sm sm:text-base font-mono text-gray-200">
             <div className="flex justify-between">
-              <span className="text-gray-400">👤 Name:</span>
+              <span className="text-gray-400"> Name:</span>
               <span>{data.name}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400">📅 Date:</span>
+              <span className="text-gray-400"> Date:</span>
               <span>{data.date}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-400">⏰ Time:</span>
+              <span className="text-gray-400"> Time:</span>
               <span>{data.time}</span>
             </div>
           </div>

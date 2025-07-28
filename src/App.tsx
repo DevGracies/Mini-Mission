@@ -15,7 +15,7 @@ const App: React.FC = () => {
 </div>
   <EyeScanner />
   <SovereigntyOath />
-  br
+  <br />
   <LockIn />
   </div> )
 };
